@@ -6,9 +6,16 @@ const session = require('express-session')
 // const mongoDBSession = require('connect-mongodb-session')
 const passport = require('passport')
 
+const routesController = require('./controllers/routes')
+
 const app = express()
 const port = process.env.PORT
 const dbURL = process.env.MONGODB_URL
+
+app.use(routesController)
+
+
+
 
 mongoose.connect(dbURL)
   .then(() => {
