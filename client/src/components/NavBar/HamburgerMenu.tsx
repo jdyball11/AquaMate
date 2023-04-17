@@ -1,13 +1,17 @@
 import React, { useState } from "react";
-import { RxHamburgerMenu } from 'react-icons/rx'
-import { RiCloseLine } from 'react-icons/ri'
+import { FaBars } from 'react-icons/fa'
+import { MdClose } from 'react-icons/md'
 import styled from 'styled-components'
 
 const HamburgerMenuContainer = styled.div({
 })
 const HamburgerMenuButton = styled.button({
     border: 'none',
-    backgroundColor: 'transparent'
+    backgroundColor: 'transparent',
+    '&:hover': {
+        backgroundColor: '#87BEFC'
+    },
+    height: '100%',
 })
 
 const HamburgerMenu: React.FC = () => {
@@ -17,7 +21,7 @@ const HamburgerMenu: React.FC = () => {
         setOpen(!open);
     };
 
-    const icon = open ? <RiCloseLine /> : <RxHamburgerMenu />;
+    const icon = open ? <MdClose /> : <FaBars />;
 
     return (
         <HamburgerMenuContainer className="hamburger-menu">
