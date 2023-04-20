@@ -1,8 +1,14 @@
-#root {
+* {
   box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+}
+
+#root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -10,6 +16,24 @@
 
 }
 
+.list {
+  marginBottom: 10px;
+}
+
+.sidebar {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 260px;
+  padding: 20px 0;
+  backgroundColor: #fff;
+  boxShadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ 
 @media (prefers-reduced-motion: no-preference) {
   
 

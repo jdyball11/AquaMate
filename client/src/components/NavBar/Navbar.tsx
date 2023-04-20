@@ -1,6 +1,7 @@
 import React from 'react';
 import HamburgerMenu from './HamburgerMenu';
 import styled from 'styled-components';
+import Sidebar from './Sidebar';
 import { FaUserCircle } from 'react-icons/fa'
 
 const NavContainer = styled.div({
@@ -16,7 +17,9 @@ const NavContainer = styled.div({
 })
 const LogoContainer = styled.div({
   height: '100%',
+
 })
+
 const UserButton = styled.button({
   border: 'none',
   backgroundColor: 'transparent',
@@ -25,6 +28,16 @@ const UserButton = styled.button({
   },
   maxHeight: '100%',
 })
+
+const UserButton = styled.button({
+  border: 'none',
+  backgroundColor: 'transparent',
+  '&:hover': {
+    backgroundColor: '#87BEFC'
+  },
+  maxHeight: '100%',
+})
+
 
 const Navbar: React.FC = () => {
 
