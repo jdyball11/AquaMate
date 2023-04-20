@@ -29,21 +29,12 @@ const UserButton = styled.button({
   maxHeight: '100%',
 })
 
-const UserButton = styled.button({
-  border: 'none',
-  backgroundColor: 'transparent',
-  '&:hover': {
-    backgroundColor: '#87BEFC'
-  },
-  maxHeight: '100%',
-})
-
 
 const Navbar: React.FC = () => {
 
   return (
     <NavContainer className="NavContainer">
-      <HamburgerMenu />
+      <Sidebar />
       <LogoContainer className="NavLogo">LOGO</LogoContainer>
       <UserButton>{<FaUserCircle style={{ height: '100%' }} />}</UserButton>
     </NavContainer>
